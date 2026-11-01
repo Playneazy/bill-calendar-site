@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101419">
+  <meta name="description" content="Bill Calendar: Payday Planner is an Android app in development for planning bills around paydays, tracking spending, and understanding money available until the next paycheck.">
+  <title>Bill Calendar: Payday Planner | Android App</title>
+  <style>
+    :root{color-scheme:dark;--bg:#101419;--panel:#1a2129;--panel2:#222c35;--text:#f1f5f8;--muted:#a4b0bb;--line:#33414d;--green:#69d7aa;--amber:#efc36d}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(ellipse at 82% 8%,#1c3031 0,transparent 42%),var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
+    a{color:var(--green)}.wrap{max-width:1080px;margin:auto;padding:0 24px}.header{border-bottom:1px solid #ffffff16}.nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand{display:flex;align-items:center;gap:11px;font-weight:750;letter-spacing:-.35px}.mark{display:grid;place-items:center;width:41px;height:41px;border-radius:11px;background:#29473d;color:var(--green);font-size:23px}.nav a{text-decoration:none;color:var(--muted);font-size:14px}.nav a:hover{color:white}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:58px;padding-top:92px;padding-bottom:92px}.eyebrow{color:var(--green);font-size:13px;font-weight:750;letter-spacing:1.7px;text-transform:uppercase}.hero h1{font-size:clamp(39px,5.2vw,64px);line-height:1.08;letter-spacing:-2.5px;margin:19px 0}.hero p{color:var(--muted);font-size:18px;max-width:540px}.status{display:inline-flex;align-items:center;gap:9px;border:1px solid #38594e;border-radius:99px;background:#193129;padding:7px 14px;font-size:13px;color:#b7efda;font-weight:650;margin-top:21px}.dot{height:8px;width:8px;background:var(--green);border-radius:50%}
+    .preview{border:1px solid #42515c;background:linear-gradient(160deg,#26323b,#171e25);border-radius:25px;padding:27px;box-shadow:0 30px 70px #0005;max-width:420px;width:100%;margin:auto}.preview .top{display:flex;justify-content:space-between;color:var(--muted);font-size:13px}.preview h2{margin:8px 0 24px;font-size:22px}.biglabel{color:var(--muted);font-size:13px}.amount{font-size:clamp(39px,4vw,52px);letter-spacing:-1px;font-weight:780;line-height:1.3;color:var(--green)}.small{color:var(--muted);font-size:13px}.preview .bar{height:9px;background:#3b474e;border-radius:20px;margin:22px 0 24px;overflow:hidden}.bar>span{display:block;background:var(--green);height:100%;width:66%;border-radius:20px}.metrics{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.metric{padding:14px;background:#ffffff0a;border:1px solid #ffffff12;border-radius:13px}.metric b{font-size:20px;display:block}.metric span{font-size:12px;color:var(--muted)}.previewfoot{font-size:12px;color:var(--muted);margin-top:22px}.previewfoot strong{color:var(--amber)}
+    section.features{padding:15px 0 100px}.sectiontitle{font-size:32px;letter-spacing:-1px;margin:10px 0}.sectionlead{color:var(--muted);max-width:680px;margin:0 0 28px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:25px}.card .symbol{font-size:27px}.card h3{font-size:18px;margin:15px 0 7px}.card p{color:var(--muted);font-size:14px;margin:0}.about{padding:0 0 95px}.aboutinner{padding:34px;background:#192820;border:1px solid #315342;border-radius:18px}.about h2{font-size:26px;margin:0 0 10px}.about p{color:#c0d1c9;margin:0;max-width:790px}.footer{border-top:1px solid #ffffff1a;padding:29px 0;color:var(--muted);font-size:13px}.footerinner{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap}.footer a{color:var(--muted)}
+    @media(max-width:760px){.hero{grid-template-columns:1fr;gap:42px;padding-top:68px;padding-bottom:70px}.hero h1{letter-spacing:-1.5px}.cards{grid-template-columns:1fr}.nav{min-height:68px}.nav a{font-size:13px}.preview{max-width:470px}.aboutinner{padding:25px}}
+  </style>
+</head>
+<body>
+  <header class="header"><div class="wrap nav">
+    <div class="brand"><span class="mark" aria-hidden="true">▦</span><span>Bill Calendar</span></div>
+    <a href="#about">About the app</a>
+  </div></header>
+  <main>
+    <div class="wrap hero">
+      <div>
+        <div class="eyebrow">Android payday &amp; bill planning</div>
+        <h1>Know what you can spend before your next payday.</h1>
+        <p>Bill Calendar: Payday Planner helps you organize upcoming bills around your paychecks, track spending, and see what money is actually available between paydays.</p>
+        <div class="status"><span class="dot"></span>Currently in development</div>
+      </div>
+      <div class="preview" aria-label="Illustrative example of a payday planning summary">
+        <div class="top"><span>PAYCHECK OVERVIEW</span><span>Example</span></div>
+        <h2>Until next payday</h2>
+        <div class="biglabel">Flexible spending</div>
+        <div class="amount">$426.50</div>
+        <div class="small">After planned bills and reserves</div>
+        <div class="bar"><span></span></div>
+        <div class="metrics">
+          <div class="metric"><b>$1,850</b><span>Paycheck</span></div>
+          <div class="metric"><b>$975</b><span>Assigned bills</span></div>
+          <div class="metric"><b>$300</b><span>Reserved spending</span></div>
+          <div class="metric"><b>$60.93</b><span>Daily spending guide</span></div>
+        </div>
+        <div class="previewfoot"><strong>Illustrative preview.</strong> Figures are examples, not live bank information.</div>
+      </div>
+    </div>
+    <section class="features" id="features"><div class="wrap">
+      <div class="eyebrow">What Bill Calendar does</div>
+      <h2 class="sectiontitle">Built around how paychecks actually work.</h2>
+      <p class="sectionlead">A clearer way to plan recurring bills and day-to-day expenses without losing sight of the next payday.</p>
+      <div class="cards">
+        <article class="card"><div class="symbol" aria-hidden="true">▦</div><h3>Paycheck-based bill planning</h3><p>See which bills fall into each pay period and plan the money needed to cover them.</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">◷</div><h3>Spending visibility</h3><p>Track purchases and understand your remaining flexible spending and daily spending guide.</p></article>
+        <article class="card"><div class="symbol" aria-hidden="true">⇄</div><h3>Bank integration planned</h3><p>Secure account connections and transaction reconciliation are planned for a future development phase.</p></article>
+      </div>
+    </div></section>
+    <section class="about" id="about"><div class="wrap"><div class="aboutinner">
+      <h2>About the project</h2>
+      <p>Bill Calendar: Payday Planner is an independently developed Android personal-finance application. The goal is to help users plan recurring obligations around payday and make better-informed day-to-day spending decisions. The app is currently in active development and is not yet publicly available. Planned bank connectivity will use a third-party financial data provider; users will be able to choose whether to connect eligible accounts.</p>
+    </div></div></section>
+  </main>
+  <footer class="footer"><div class="wrap footerinner"><span>© <span id="year">2026</span> Bill Calendar: Payday Planner. Independently developed.</span><span>Android app in development</span></div></footer>
+  <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>
